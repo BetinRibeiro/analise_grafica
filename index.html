@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Criptomoedas</title>
+    <script src="mainone.js" defer></script>
+    <script src="maintwo.js" defer></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
+</head>
+<body>
+    <div class="py-5" >
+        <div class="container" >
+          <div class="row">
+            <div class="col-md-6">
+                <h1>Formulário de Configurações</h1>
+                <textarea style="width: 100%; height: 150px;" cols="10" id="textarea"></textarea>
+                <button class="btn btn-primary"  onclick="createList()">Atualizar Lista</button>
+                <button class="btn btn-primary"  onclick="createList2()">Processar</button>
+            </div>
+            <div class="col-md-6">
+                <form class="" id="configForm">
+                    <div class="form-group"> 
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" class="form-control"  id="endereco" name="endereco" required>
+                    </div>
+                    <div class="form-group"> 
+                        <label for="accessToken">Access Token:</label>
+                        <input type="text" class="form-control"  id="accessToken" name="accessToken" required>
+                    </div>
+                    <div class="form-group"> 
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" class="form-control"  id="telefone" name="telefone" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="salvarConfiguracoes()">Salvar Configurações</button>
+                </form>
+            </div>
+          </div>
+          <div class="row p-2"  id="listOutput">
+          </div>
+        </div>
+      </div>
+</body>
+</html>
